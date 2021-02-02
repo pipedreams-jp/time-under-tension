@@ -225,6 +225,32 @@ export function SessionTickNew() {
               </button>
             </>
           )}
+          <button
+            type="button"
+            onClick={() => setPerformance("project")}
+            style={ButtonStyles(performance === "project")}
+            disabled={performance === "project"}
+          >
+            Attempt
+          </button>
+          {performance === "project" && (
+            <>
+              <button
+                type="button"
+                onClick={() => setAttempts((attempts) => attempts - 1)}
+                disabled={attempts === 1}
+              >
+                -
+              </button>
+              {attempts}
+              <button
+                type="button"
+                onClick={() => setAttempts((attempts) => attempts + 1)}
+              >
+                +
+              </button>
+            </>
+          )}
         </div>
 
         <div>

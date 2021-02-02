@@ -7,7 +7,7 @@ export type Session = {
   };
 };
 
-export type Performance = "flash" | "onsight" | "redpoint";
+export type Performance = "flash" | "onsight" | "redpoint" | "project";
 export type Environment = "outdoors" | "gym";
 export type TickType = "sport" | "trad" | "boulder";
 export type Grade = number;
